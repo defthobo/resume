@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1.1cm,right=1.1cm,top=0.8cm,bottom=1.2cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Black}
+\colorlet{accent}{Black}
+\colorlet{emphasis}{Black}
+\colorlet{body}{Black}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[hidelinks]{hyperref}
+
+\linespread{1}
+
+\begin{document}
+
+\name{Minjie Mao}
+\tagline{Student Pursuing Master's Degree}
+%\photo{2.8cm}{Globe_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{\href{mailto:minjiema@usc.edu}{minjiema@usc.edu}}
+  \phone{+1 (734) 604-5631}
+  \mailaddress{1420 W 22ND ST, Los Angeles, CA 90007}
+%  \location{Los Angeles, CA 90007}
+	\github{\href{https://github.com/defthobo}{defthobo}}
+  \linkedin{\href{https://www.linkedin.com/in/minjie-mao-5b126123a} {LinkedIn}}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection{Education}
+\cveducation{University of Southern California}{Los Angeles, USA}{Master of Science in Computer Science | GPA - 3.67/4.00}{Sep 2023 -- May 2025 (Expected)}
+
+\cveducation{University of Michigan - Ann Arbor}{Ann Arbor, USA}{Bachelor of Science in Computer Science (Dual Degree) | GPA - 3.78/4.00}{Sep 2021 -- Apr 2023}
+
+
+\cveducation{Shanghai Jiao Tong University}{Shanghai, China}{Bachelor of Science in Electrical and Computer Engineering (Dual Degree) | GPA - 3.62/4.00}{Sep 2019 -- Aug 2023}
+
+
+\cvsection{Technical Skills}
+\textbf{Languages:} Python, C/C++, SystemVerilog, JavaScript, TypeScript, Java, Kotlin, Bash Scripting, HTML, CSS\\
+\textbf{Frameworks \& Development Tools:} Linux, CUDA, NodeJS, React, Angular, Bootstrap, NeuronxDistributed, vLLM\\
+\textbf{Databases:} SQLite, Oracle, MongoDB 
+
+\vspace{1pt}
+\cvsection{Work Experience}
+
+\cvevent{Amazon Web Services}{San Jose, USA}{Software Dev Engineer Intern - Machine Learning Chip Accelerator}{NeuronxDistributed, vLLM}{May 2024 -- Aug 2024}
+\begin{itemize}
+	\item Implemented multi-modal model inference on AWS  ML chips (Trn1/Inf2) under NeuronxDistributed framework.
+	\item Optimized Llava inference throughput by integrating paged KV cache technique for efficient memory management.
+\end{itemize}
+
+\cvevent{Shanghai Jiao Tong University}{Shanghai, China}{Engineering Drawing OCR Systems Research Assistant} {Python, PaddleOCR, PyTorch}{Dec 2022 -- Nov 2023}
+\begin{itemize}
+	\item Augmented data according to test results, including the generation of annotations with complex background.
+	\item Added triplet vector embedding techniques to PaddleOCR workflow, improving recognition accuracy to over 80\%.
+\end{itemize}
+
+
+\cvsection{Projects}
+
+\cvevent{}{}{Responsive Web \& Android App Dev}{Typescript, NodeJS, Angular, MongoDB, Kotlin, REST API}{Jan 2024 -- May 2024}
+\begin{itemize}
+	\item Developed a real-time stock search website with responsive design using Bootstrap and Angular framework. \href{http://stock-env.eba-etbgm9hj.us-west-1.elasticbeanstalk.com/search/home}{\faExternalLink}
+	\item Deployed NodeJS backend server and MongoDB Atlas to persistently store user information.
+	\item Enabled gesture control features on migrated android stock search application.
+\end{itemize}
+
+\cvevent{}{}{Reliable Transport Protocol \& BBR Congestion Control}{C/C++, Socket Programming, Quagga, BBR}{Sep 2023 -- Dec 2023} 
+\begin{itemize}
+	\item Built a reliable transport protocol on top of UDP with cumulative acknowledgment and sliding window to resolve issues of packet loss, delay, corruption, duplication, and reordering.
+	\item Configured OSPF, iBGP and eBGP within an Autonomous System using Quagga routing suite.
+	\item Added Bottleneck Bandwidth and Round-trip propagation time(BBR) congestion control protocol to simplified TCP.
+\end{itemize}
+
+\cvevent{}{}{R10K-style Out-of-Order Superscalar Processor}{SystemVerilog}{Jan 2023 - Apr 2023}
+\begin{itemize}
+	\item Oversaw the intricate design of critical components of an R10k-style out-of-order superscalar processor, including the Reorder Buffer (ROB), Reservation Stations (RS), and Physical Register File (PRF) to increase instruction level parallelism.
+	\item Implemented a multiport non-blocking instruction cache and an instruction fetcher coordinating with branch predictor.
+	\item Engineered a 2-way set-associative data cache featuring a victim cache under LRU policy, to minimize cache misses.
+\end{itemize}
+
+\cvevent{}{}{Fakebook Database} {Oracle SQL, MongoDB, Java, JavaScript}{Jan 2023 -- Apr 2023}
+\begin{itemize}
+	\item Designed an ER Diagram and built a schema of tables from a Facebook-like application database.
+	\item Constructed SQL queries using Java and JDBC to extract useful information from fakebook database.
+	\item Migrated tables in fakebook database to a MongoDB collection of users and finished queries on the collection.
+\end{itemize}
+
+\cvevent{}{}{Optimization of the Neural Network Convolutional Forward Pass}{CUDA C/C++}{Sep 2022 -- Dec 2022}
+\begin{itemize}
+	\item Adopted shared memory tiling technique to reduce global memory traffic of the forward path of convolutional layers.
+	\item Reduced convolution kernel to a highly efficient matrix multiplication kernel with input unfolding and replicating.
+	\item Exploited multiple fine-tuned kernels tailored for various convolutional layers within deep learning models.
+\end{itemize}
+
+%\cvevent{}{}{Parallel Web Search Engine using MapReduce Framework}{Python, JavaScript, SQLite, Flask, ReactJS}{Jan 2022 -- Apr 2022}
+%\begin{itemize}
+%	\item Developed a client-side dynamic website with a SQL backend server, employing ReactJS for responsive user interfaces.
+%	\item Implemented a pipeline of MapReduce programs to run TF-IDF algorithms for precise search results.
+%	\item Engineered UDP-based heartbeat mechanism to swiftly detect system failures and reassign tasks to live servers.
+%\end{itemize}
+
+\cvevent{}{}{Operating System Emulation}{C/C++, Multithreading, Network File System}{Sep 2022 -- Dec 2022}
+\begin{itemize}
+	\item Customized a thread library with mutex support to manage uniprocessor scheduling.
+	\item Implemented virtual memory management pager, optimizing memory allocation and resource utilization.
+	\item Orchestrated emulation of a multi-threaded, multi-client, and secure network file system server, minimizing disk I/Os.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\clearpage
+%\cvsection[page2sidebar]{Projects}
+%
+%
+%\begin{itemize}
+%\item Film Studies
+%
+%Analysis of 5 Foreign Language Films, which included, The Lives of Others, The Song of Sparrows, Rashomon, City of God, The Motorcycle Diaries
+%
+%
+%
+%\item Documentary
+%
+%Soul Exchange, Based on Mother's Day - by J.B. Priestely, Worked as an Assistant Director and Camera Person
+%
+%
+%
+%\item Video Production
+%
+%A short short film on 'Growing-up'
+%\end{itemize}
+%
+%
+%
+%\cvsection{DECLARATION}
+%I hereby declare that the above mentioned information is correct up to my
+%knowledge and I bear the responsibility for the correctness of the above mentioned.
+%
+%\medskip
+%
+%
+%\cvevent{}{}{Date - 23.02.19}{Place - New Delhi}
+%
+%
+%
+%%% If the NEXT page doesn't start with a \cvsection but you'd
+%%% still like to add a sidebar, then use this command on THIS
+%%% page to add it. The optional argument lets you pull up the 
+%%% sidebar a bit so that it looks aligned with the top of the
+%%% main column.
+%% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}

@@ -109,12 +109,20 @@
 
 
 \cvsection{Technical Skills}
-\textbf{Languages:} Python, C/C++, SystemVerilog, JavaScript, TypeScript, Java, Kotlin, Bash Scripting, HTML, CSS\\
-\textbf{Frameworks \& Development Tools:} Linux, CUDA, NeuronxDistributed, NodeJS, React, Angular, Bootstrap,Pytorch\\
-\textbf{Databases:} SQLite, Oracle, MongoDB 
+\textbf{Languages:} Python, C/C++, SQL, SystemVerilog, JavaScript, TypeScript, Java, Kotlin, Bash Scripting\\
+\textbf{Frameworks \& Development Tools:} Pytorch, Numpy, DSPy, AWS CDK, MLflow, NodeJS, React, Angular \\
+\textbf{Infra \& Service:} Elastic Kubernetes Cluster, Elastic Container Service, Bedrock, Cloudwatch, FSx
 
 \vspace{1pt}
 \cvsection{Work Experience}
+
+\cvevent{Amazon Web Services}{Bellevue, USA}{Software Dev Engineer - GenAI for Kernels}{Bedrock, Kubernetes, DSPy, MLflow}{June 2025 -- current}
+\begin{itemize}
+	\item Configured an Elastic K8s cluster on Trainium nodes to benchmark LLM-generated kernel performance.
+	\item Architected and benchmarked two multi-agent systems, including instruction-guided RAG agents and self-evolving agents, resulting in a 1.23x average kernel speedup for the superior model.
+	\item Deployed an MLflow server with RDS/S3 backends to analyze kernel traces and boost multi-agent system throughput.
+	%	\item Optimized Llava inference throughput by integrating paged KV cache technique for efficient memory management.
+\end{itemize}
 
 \cvevent{Amazon Web Services}{San Jose, USA}{Software Dev Engineer Intern - Machine Learning Chip Accelerator}{LLM, torchXLA}{May 2024 -- Aug 2024}
 \begin{itemize}
@@ -123,12 +131,12 @@
 	\item Designed preprocessing of the embedding mask on CPU\ to avoid tensor materialization and IR graph truncation.
 %	\item Optimized Llava inference throughput by integrating paged KV cache technique for efficient memory management.
 \end{itemize}
-
-\cvevent{Shanghai Jiao Tong University}{Shanghai, China}{Engineering Drawing OCR Systems Research Assistant} {Python, PaddleOCR, PyTorch}{Dec 2022 -- Nov 2023}
-\begin{itemize}
-	\item Augmented data according to test results, including the generation of annotations with complex background.
-	\item Added triplet vector embedding techniques to PaddleOCR workflow, improving recognition accuracy to over 80\%.
-\end{itemize}
+%
+%\cvevent{Shanghai Jiao Tong University}{Shanghai, China}{Engineering Drawing OCR Systems Research Assistant} {Python, PaddleOCR, PyTorch}{Dec 2022 -- Nov 2023}
+%\begin{itemize}
+%	\item Augmented data according to test results, including the generation of annotations with complex background.
+%	\item Added triplet vector embedding techniques to PaddleOCR workflow, improving recognition accuracy to over 80\%.
+%\end{itemize}
 
 
 \cvsection{Projects}
@@ -154,12 +162,12 @@
 	\item Engineered a 2-way set-associative data cache featuring a victim cache under LRU policy, to minimize cache misses.
 \end{itemize}
 
-\cvevent{}{}{Fakebook Database} {Oracle SQL, MongoDB, Java, JavaScript}{Jan 2023 -- Apr 2023}
-\begin{itemize}
-	\item Designed an ER Diagram and built a schema of tables from a Facebook-like application database.
-	\item Constructed SQL queries using Java and JDBC to extract useful information from fakebook database.
-	\item Migrated tables in fakebook database to a MongoDB collection of users and finished queries on the collection.
-\end{itemize}
+%\cvevent{}{}{Fakebook Database} {Oracle SQL, MongoDB, Java, JavaScript}{Jan 2023 -- Apr 2023}
+%\begin{itemize}
+%	\item Designed an ER Diagram and built a schema of tables from a Facebook-like application database.
+%	\item Constructed SQL queries using Java and JDBC to extract useful information from fakebook database.
+%	\item Migrated tables in fakebook database to a MongoDB collection of users and finished queries on the collection.
+%\end{itemize}
 
 \cvevent{}{}{Optimization of the Neural Network Convolutional Forward Pass}{CUDA C/C++}{Sep 2022 -- Dec 2022}
 \begin{itemize}

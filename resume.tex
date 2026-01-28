@@ -75,9 +75,9 @@
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{\href{mailto:minjiema@usc.edu}{minjiema@usc.edu}}
-  \phone{+1 (734) 604-5631}
-  \mailaddress{15301 NE Turing St Apt 523, Redmond WA 98052}
+  \email{\href{mailto:minjiema@usc.edu}{minjiema@usc.edu}} \hspace{-0.4cm}
+  \phone{+1 (734) 604-5631} \hspace{-0.4cm}
+  \mailaddress{15301 NE Turing St Apt 523, Redmond, WA 98052} \hspace{-0.4cm}
 %  \location{Los Angeles, CA 90007}
 	\github{\href{https://github.com/defthobo}{GitHub}}
   \linkedin{\href{https://www.linkedin.com/in/minjie-mao-5b126123a} {LinkedIn}}
@@ -116,11 +116,11 @@
 \vspace{1pt}
 \cvsection{Work Experience}
 
-\cvevent{Amazon Web Services}{Bellevue, USA}{Software Dev Engineer - GenAI for Kernels}{Bedrock, Kubernetes, DSPy, MLflow}{June 2025 -- current}
+\cvevent{Amazon Web Services}{Bellevue, USA}{Software Dev Engineer - GenAI for Kernels}{Bedrock, Kubernetes, DSPy, MLflow}{June 2025 -- Present}
 \begin{itemize}
 	\item Configured an Elastic K8s cluster on Trainium nodes to benchmark LLM-generated kernel performance.
-	\item Architected and benchmarked two multi-agent systems, including instruction-guided RAG agents and self-evolving agents, resulting in a 1.23x average kernel speedup for the superior model.
-	\item Deployed an MLflow server with RDS/S3 backends to analyze kernel traces and boost multi-agent system throughput.
+	\item Architected and benchmarked two multi-agent systems, including instruction-guided RAG agents and self-evolving agents, resulting in a 1.23x average kernel speedup for the superior agentic workflow.
+	\item Deployed an MLflow server on ECS with RDS \& S3 backends to analyze optimization trajectories.
 	%	\item Optimized Llava inference throughput by integrating paged KV cache technique for efficient memory management.
 \end{itemize}
 
@@ -128,7 +128,7 @@
 \begin{itemize}
 	\item Implemented multi-modal model inference on AWS  ML chips (Trn1/Inf2) under NeuronxDistributed framework.
 	\item Enabled input and output channel level tensor parallel convolutional layer on neuron device.
-	\item Designed preprocessing of the embedding mask on CPU\ to avoid tensor materialization and IR graph truncation.
+	\item Designed preprocessing of the embedding mask on CPU\ to avoid tensor materialization and computation graph truncation.
 %	\item Optimized Llava inference throughput by integrating paged KV cache technique for efficient memory management.
 \end{itemize}
 %
@@ -140,13 +140,6 @@
 
 
 \cvsection{Projects}
-
-\cvevent{}{}{Responsive Web \& Android App Dev}{Typescript, NodeJS, Angular, MongoDB, Kotlin, REST API}{Jan 2024 -- May 2024}
-\begin{itemize}
-	\item Developed a real-time stock search website with responsive design using Bootstrap and Angular framework. %\href{http://stock-env.eba-etbgm9hj.us-west-1.elasticbeanstalk.com/search/home}{\faExternalLink}
-	\item Deployed NodeJS backend server and MongoDB Atlas to persistently store user information.
-	\item Enabled gesture control features on migrated android stock search application.
-\end{itemize}
 
 \cvevent{}{}{Reliable Transport Protocol \& BBR Congestion Control}{C/C++, Socket Programming, Quagga, BBR}{Sep 2023 -- Dec 2023} 
 \begin{itemize}
@@ -188,6 +181,13 @@
 	\item Customized a thread library with mutex support to manage uniprocessor scheduling.
 	\item Implemented virtual memory management pager, optimizing memory allocation and resource utilization.
 	\item Orchestrated emulation of a multi-threaded, multi-client, and secure network file system server, minimizing disk I/Os.
+\end{itemize}
+
+\cvevent{}{}{Responsive Web \& Android App Dev}{Typescript, NodeJS, Angular, MongoDB, Kotlin, REST API}{Jan 2024 -- May 2024}
+\begin{itemize}
+	\item Developed a real-time stock search website with responsive design using Bootstrap and Angular framework. %\href{http://stock-env.eba-etbgm9hj.us-west-1.elasticbeanstalk.com/search/home}{\faExternalLink}
+	\item Deployed NodeJS backend server and MongoDB Atlas to persistently store user information.
+	\item Enabled gesture control features on migrated android stock search application.
 \end{itemize}
 
 
